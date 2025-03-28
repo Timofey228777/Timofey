@@ -1,0 +1,484 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 3px solid #e8491d;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+/* Основная секция */
+#main {
+    background: #fff;
+    padding: 30px;
+}
+
+#main h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#main p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Кнопка "Начать играть" */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e8491d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    width:fit-content;
+}
+
+.button:hover {
+    background-color: #c63d15;
+}
+
+/* "Играй с удовольствием!" */
+.play-text {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/* Медиа-запрос для адаптивности */
+@media(max-width: 768px) {
+    header h1 {
+        float: none;
+        text-align: center;
+    }
+
+    header nav {
+        float: none;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav li {
+        float: none;
+        display: block;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+/* Стили для страницы с правилами */
+
+#rules {
+    background: #fff;
+    padding: 30px;
+}
+
+#rules h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.rule-category {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.rule-category h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #35424a;
+}
+
+.rule-category ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.rule-category li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.note {
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Стили для страницы "Донат" */
+
+#donate {
+    background: #fff;
+    padding: 30px;
+}
+
+#donate h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#donate h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #35424a;
+    text-align: center;
+}
+
+.donate-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.donate-option {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.donate-option h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.donate-amounts {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.donate-amount {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50; /* Зеленый цвет */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.donate-amount:hover {
+    background-color: #43A047;
+}
+
+.payment-methods {
+    text-align: center;
+}
+
+.payment-methods img {
+    width: 80px;
+    margin: 10px;
+}
+
+.note {
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Заголовки и шрифты */
+header {
+  background-color: #2e8b57; /* Тёмно-зелёный цвет */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Основной контент */
+main {
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #2e8b57;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Основные стили */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Заголовки и шрифты */
+  header {
+    background-color: #2e8b57; /* Тёмно-зелёный цвет */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Основной контент */
+  main {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #2e8b57;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Кнопка скачивания */
+  .download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #2e8b57;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #246b45;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2e8b57;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  /* Мобильная адаптация */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    footer p {
+      font-size: 0.9rem;
+    }
+  
+    .download-btn {
+      font-size: 1.2rem;
+      padding: 12px 25px;
+    }
+  }
+  
